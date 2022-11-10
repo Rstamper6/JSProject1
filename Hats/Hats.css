@@ -36,6 +36,10 @@ a {
   border: 1px solid;
 }
 
+figcaption{
+  text-align: center;
+}
+
 @media screen and (min-width: 600px) {
     #Hatimgs {
         display: flex;
