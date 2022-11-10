@@ -27,7 +27,7 @@ img {
 
 #images {
     display: flex;
-    
+    border: 1px solid black;
 }
 
 .jacket {
@@ -41,4 +41,10 @@ figure {
 figcaption {
     margin: 0;
     text-align: center;
+}
+
+label {
+    position: relative;
+    right: 50px;
+    top: 50px;
 }
