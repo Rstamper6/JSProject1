@@ -42,6 +42,12 @@ figcaption{
   border: 1px solid;
 }
 
+h1 {
+ display: flex;
+ justify-content: center;
+ transform: translateX(-40px);
+}
+
 @media screen and (min-width: 600px) {
     #Hatimgs {
         display: flex;
