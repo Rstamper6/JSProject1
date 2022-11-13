@@ -74,7 +74,7 @@ button {
 }
 
 @media screen and (min-width: 600px) {
-    #pantsImg {
+    #topimages {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
