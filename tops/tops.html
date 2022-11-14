@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./tops.css">
+    <link rel="stylesheet" href="tops.css">
     <title>POS</title>
 </head>
+
 <body>
     <header class="header1">
         <a href="/homepage/homepage.html" class="nav" id="home">Home</a>
@@ -16,16 +18,49 @@
         <a href="/tops/tops.html" class="nav" id="tops">Tops</a>
         <a href="#" class="nav" id="cart">View Cart</a>
     </header>
+    <h1 class="top-head">Tops</h1>
 
-    <div id="images">
-        <div id="shirtImgs">
-            <img id="shirt1" src="/images/nikeshirt1.png">
-            <label>asdas</label>
-            <img src="/images/nikeshirt2.png">
-            <label>asdas</label>
-            <img class="jacket" src="/images/nikeJacket.png">
-            <label>asdas</label>
-            <img class="jacket" src="/images/nikeJacket2.png">
+    <div id="topimages">
+
+        <div>
+            <figure>
+                <img class="shirt1" src="/images/nikeshirt1.png">
+                <figcaption class="nikeshirt1">Nike Shirt White</figcaption>
+                <figcaption class="nikeshirt1">Price: $40</figcaption>
+                <figcaption class="nikeshirt1">Description: White Shirt</figcaption>
+                <figcaption class="nikeshirt1">Sizes: SM, MD, LG, XL</figcaption>
+                <button onclick="addwhitetop2cart()" type="submit">Add to Cart</button>
+            </figure>
+        </div>
+        <div>
+            <figure>
+                <img class="shirt2" src="/images/nikeshirt2.png">
+                <figcaption class="nikeshirt2">Nike Longsleeve Green</figcaption>
+                <figcaption class="nikeshirt2">Price: $40</figcaption>
+                <figcaption class="nikeshirt2">Description: Green Longsleeve</figcaption>
+                <figcaption class="nikeshirt2">Sizes: SM, MD, LG, XL</figcaption>
+                <button onclick="addgreen2cart()" type="submit">Add to Cart</button>
+            </figure>
+        </div>
+        <div>
+            <figure>
+                <img class="nikeJacket" src="/images/nikeJacket.png">
+                <figcaption class="nikeJacket">Nike White Jacket</figcaption>
+                <figcaption class="nikeJacket">Price: $45</figcaption>
+                <figcaption class="nikeJacket">Description: Winter White Jacket</figcaption>
+                <figcaption class="nikeJacket">Sizes: SM, MD, LG, XL</figcaption>
+                <button onclick="addwhiteJ2cart()" type="submit">Add to Cart</button>
+            </figure>
+        </div>
+        <div>
+            <figure>
+                <img class="jacket2" src="/images/nikeJacket2.png">
+                <figcaption class="jacket2">Nike Black Jacket</figcaption>
+                <figcaption class="jacket2">Price: $45</figcaption>
+                <figcaption class="jacket2">Description: Winter Black Jacket</figcaption>
+                <figcaption class="jacket2">Sizes: SM, MD, LG, XL</figcaption>
+                <button onclick="addblackJ2cart()" type="submit">Add to Cart</button>
+            </figure>
         </div>
     </div>
 
