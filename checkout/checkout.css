@@ -94,9 +94,45 @@ a {
     width: 30px;
 }
 
+#amtInp {
+    position: relative;
+    top: 15px;
+}
+#amtInp input {
+    width: 30px;
+}
 .cashBoxes {
+   margin: 1px;
+}
 
+
+#ifCard {
+    border: 1px solid black;
+    width: 80%;
+    padding: 5px;
+    margin-top: 10px;
+}
+.cardInfo {
+    margin: 5px;
 
 }
+#cardAmt {
+    width: 20%;
+}
+#cardNum {
+    width: 50%;
+}
+#cvv {
+    width: 35%;
+}
+#cvvExp {
+    display: flex;
+    justify-content: space-between;
+}
+#cvvDiv {
+    margin: 0;
+    width: 35%;
+}
+
 
 

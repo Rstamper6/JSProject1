@@ -20,7 +20,6 @@
     </div>
 
     <div id="bod">
-
         <div id="items">
             <div class="cartInfo" id="cartinfo1">
                 <div id="cartImgDiv1">
@@ -70,13 +69,13 @@
 
         <div id="ifCash">
                 <div class="cashBoxes" id="subtotal">
-                    <p>Subtotal: 40</p>
+                    <p>Subtotal:</p>
                 </div>
                 <div class="cashBoxes" id="tax">
-                    <p>Tax: 2</p>
+                    <p>Tax:</p>
                 </div>
                 <div class="cashBoxes" id="total">
-                    <p>Total: 42</p>
+                    <p>Total:</p>
                 </div>
 
                 <div class="cashBoxes" id="amtInp">
@@ -90,19 +89,27 @@
         </div>
 
         <div id="ifCard">
-                <label for="cashAmt">Amount Paid:</label>
-                <input id="cashAmt" type="number" placeholder="$$">
+            <div class="cardInfo">
+                <label for="cardAmt">Amount:</label>
+                <input id="cardAmt" type="number" placeholder="$$">
+            </div>
+            <div class="cardInfo" id="cardInfo">
+                <label for="cardNum">Card Number: </label>
+                <input id="cardNum" type="text" placeholder="Card Number">
+            </div>
+                
+            <div class="cardInfo" id="cvvExp">
+                <div id="expDiv">
+                    <label for="exp">EXP</label>
+                    <input id="exp" type="date" placeholder="EXP">
+                </div>
 
+                <div id="cvvDiv">
+                    <label for="cvv">CVV</label>
+                    <input id="cvv" type="number" placeholder="CVV">
+                </div>
+            </div>
         </div>
-
-
-
-
-
-
-
     </div>
-
-
 </body>
 </html>
