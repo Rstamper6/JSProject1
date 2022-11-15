@@ -18,5 +18,5 @@ function cashOrCardSel(){
     }
 }
 // cashOrCardSel();
-
 cashCard.addEventListener('click', cashOrCardSel)
+
