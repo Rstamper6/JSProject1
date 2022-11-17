@@ -111,7 +111,7 @@ let ifCash = document.getElementById('ifCash');
 let ifCard = document.getElementById('ifCard');
 let cashSel = document.getElementById('cash');
 let cardSel = document.getElementById('card');
-let cashPaid = document.getElementById('cashAmt').value;
+let cashPaid = document.getElementById('cashAmt');
 let changeDiv = document.getElementById('change');
 
 let recDiv = document.getElementById('rec');
@@ -129,6 +129,10 @@ function cashOrCardSel(){
         ifCard.style.display = "none";
         document.addEventListener('submit', e =>{
             e.preventDefault()
+            if(cashPaid.value < fullTotal){
+                alert("Pay up! This aint free!")
+                return false;
+            }
             let change = cashPaid.value - fullTotal;
             changeDiv.innerText = `Change: $${change.toFixed(2)}`
             showRec()            
@@ -136,9 +140,17 @@ function cashOrCardSel(){
             recSub.innerHTML = `Subtotal: $${j}`
             recTax.innerHTML = `Tax $${salesTax.toFixed(2)}`
             recTot.innerHTML = `Total: $${fullTotal.toFixed(2)}`
+            let recPaid = document.createElement('p')
+            recPaid.innerText = `Amount Paid: $${cashPaid.value}`
+            recDiv.appendChild(recPaid)
+            let recChange = document.createElement('p')
+            recChange.innerHTML = `Change Tendered: $${change.toFixed(2)}`
+            recDiv.appendChild(recChange)
+
         })
     }
     else if (cardSel.checked){
+        recItems.innerHTML = `Items purchased: ${nameArr}  `
         let cardNum = document.getElementById('cardNum');
         let cardCvv = document.getElementById('cvv');
         let cardAmt = document.getElementById('cardAmt');
@@ -170,6 +182,11 @@ function cashOrCardSel(){
             recSub.innerHTML = `Subtotal: $${j}`
             recTax.innerHTML = `Tax $${salesTax.toFixed(2)}`
             recTot.innerHTML = `Total: $${fullTotal.toFixed(2)}`
+            let cardNot = document.createElement('p')
+            let num = cardNum.value
+            let lastFour = num.slice(-4)
+            cardNot.innerHTML = `Paid using card ${lastFour}`
+            recDiv.appendChild(cardNot)
         })
     }
 }
