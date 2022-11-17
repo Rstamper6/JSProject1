@@ -18,5 +18,24 @@ function cashOrCardSel(){
     }
 }
 // cashOrCardSel();
-cashCard.addEventListener('click', cashOrCardSel)
+cashCard.addEventListener('click', cashOrCardSel);
 
+
+// let addPants = document.querySelector("#addBPants");
+// console.log("hi");
+
+// addPants.addEventListener("submit", function(event){
+//     event.preventDefault();
+//     let data = newFormdata(addPants);
+
+//     let getPants = data.get("addBPants");
+
+//     console.log(getPants)
+
+// })
+
+const nameItem = document.querySelector(".addItemsToPage");
+
+function addBluePants(){
+    nameItem.innerHTML += `<div class = "shape">${getText}</div>`;
+}
